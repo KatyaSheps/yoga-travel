@@ -11,4 +11,13 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     hideTabContent(1);
+
+    function showTabContent(b) {
+        if (tabContent[b].classList.contains('hide')) {
+            tabContent[i].classList.remove('hide');
+            tabContent[i].classList.add('show');
+        }
+
+    }
+
 });
