@@ -18,9 +18,7 @@ window.addEventListener('DOMContentLoaded', function () {
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('show');
         }
-
     }
-
 
     info.addEventListener('click', function (event) {
         let target = event.target;
