@@ -33,6 +33,13 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Modal for Timer
+
+  //  let description = document.querySelector('.description-btn'),
+
+
+
+
     //Timer
 
     let deadline = '2020-03-19';
@@ -91,14 +98,23 @@ window.addEventListener('DOMContentLoaded', function () {
 // Modal
 
 let more = document.querySelector('.more'),
+    description = document.querySelector('.description-btn'),
     overlay = document.querySelector('.overlay'),
     close = document.querySelector('.popup-close');
 
-more.addEventListener('click', function () {
+function openOverlay () {
     overlay.style.display = 'block';
     this.classList.add('more-splash');
     document.body.style.overflow = 'hidden';
+}
 
+more.addEventListener('click', function () {
+    openOverlay();
+
+});
+
+description.addEventListener('click', function () {
+ openOverlay();
 });
 
 close.addEventListener('click', function () {
